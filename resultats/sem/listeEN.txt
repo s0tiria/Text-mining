@@ -1,0 +1,700 @@
+------------------------
+LIEUX
+------------------------
+     74  Syrie
+     71  Etats-Unis
+     68  Bruxelles
+     59  France
+     51  Turquie
+     35  Europe
+     35  Chine
+     34  Iran
+     33  Brésil
+     32  Allemagne
+     31  Paris
+     29  Calais
+     28  Corée
+     25  Royaume-Uni
+     19  Grèce
+     18  Israël
+     18  Espagne
+     18  Cologne
+     17  Panama
+     17  Belgique
+     16  Londres
+     16  Arabie
+     15  Russie
+     15  Istanbul
+     15  Inde
+     14  Yémen
+     14  Japon
+     13  Irak
+     13  Cuba
+     12  Tunisie
+     12  Centrafrique
+     11  Washington
+     11  Ukraine
+     11  Pakistan
+     11  New
+     11  Mexique
+     11  Libye
+     10  Rome
+     10  Palmyre
+     10  Egypte
+     10  Alep
+      9  Ouagadougou
+      9  Nevada
+      9  Genève
+      8  Taïwan
+      8  Pologne
+      8  Italie
+      8  Berlin
+      8  Argentine
+      8  Afrique
+      8  Afghanistan
+      7  Venezuela
+      7  Texas
+      7  République
+      7  Pyongyang
+      7  Moscou
+      7  Irlande
+      7  Côte
+      6  Téhéran
+      6  Philippines
+      6  Mali
+      6  Madaya
+      6  Indonésie
+      6  Damas
+      6  Californie
+      6  Burundi
+      6  Burkina
+      6  Ankara
+      6  Amérique
+      6  Algérie
+      5  San
+      5  Nigeria
+      5  Michigan
+      5  Maroc
+      5  La
+      5  Islande
+      5  Grande-Bretagne
+      5  Grand-Bassam
+      5  Grand
+      5  Caire
+      5  Autriche
+      5  Australie
+      4  Pékin
+      4  Macédoine
+      4  Los
+      4  Jérusalem
+      4  Idomeni
+      4  Hongkong
+      4  Haïti
+      4  Grande-Synthe
+      4  ex-Yougoslavie
+      4  Eglise
+      4  Chili
+      4  Bangladesh
+      3  Tel-Aviv
+      3  Soudan
+      3  Somalie
+      3  Portugal
+      3  Pérou
+      3  Pays-Bas
+      3  Munich
+      3  Moyen-Orient
+      3  Lesbos
+      3  Las
+      3  Kentucky
+      3  Kaboul
+      3  Hollande
+      3  Haut-Karabakh
+      3  Djakarta
+      3  Davos
+      3  Danemark
+      3  Catalogne
+      3  Brexit
+      3  Brazzaville
+      3  Bénin
+      2  Vienne
+      2  Varsovie
+      2  Tunis
+      2  Toronto
+      2  Tokyo
+      2  Stockholm
+      2  Slovaquie
+      2  Sénégal
+      2  Saint-Denis
+      2  Niamey
+      2  Molenbeek
+      2  Moldavie
+      2  Miami
+      2  Malaisie
+      2  Liban
+      2  Kinshasa
+      2  Kenya
+      2  Kasserine
+      2  Kansas
+      2  Jérusalem-Est
+      2  Hongrie
+      2  Géorgie
+      2  Gambie
+      2  Ex-Yougoslavie
+      2  États-Unis
+      2  Égypte
+      2  Ecosse
+      2  Detroit
+      2  Croatie
+      2  Cleveland
+      2  Cisjordanie
+      2  Chicago
+      2  Canada
+      2  Bujumbura
+      2  Bosnie
+      2  Bolivie
+      2  Birmanie
+      2  Bardo
+      2  Baltimore
+      2  Bagdad
+      2  Athènes
+      2  Arizona
+      2  Angola
+      2  Al-Nosra
+      1  Zaventem
+      1  Wyoming
+      1  Wisconsin
+      1  Vietnam
+      1  Val-de-Marne
+      1  Uruguay
+      1  URSS
+      1  Urbi
+      1  Tripoli
+      1  Tombouctou
+      1  Tikrit
+      1  Tihange
+      1  Thanksgiving
+      1    Texas_La_base
+      1  Telegram
+      1  Tchétchène
+      1  Tchad
+      1    Syrie_La_position
+      1    Syrie_La_députée
+      1  Suisse
+      1  Sud
+      1  Srebrenica
+      1  Slovénie
+      1  similaires_à_Molenbeek
+      1  Schengen
+      1  Schaerbeek
+      1  Salvador
+      1  Saint-Nazaire
+      1  Roumanie
+      1  Rotterdam
+      1  Rostov-sur-le-Don
+      1  Roman
+      1  Rohani
+      1  Riyad
+      1  Rio
+      1  reprend_Palmyre
+      1  Reno
+      1  Rennes
+      1  Quai
+      1  Qatar
+      1  Proche-Orient
+      1  Poutine
+      1  Pensacola
+      1  Pegida
+      1  Pécresse
+      1  Pâques
+      1  Ouganda
+      1  Otniel
+      1  Nouvelle-Zélande
+      1  Norvège
+      1  Nanterre
+      1  Nancy
+      1  Nagorny-Karabakh
+      1  Mogadiscio
+      1  Milan
+      1  Mexico
+      1  Manhattan
+      1  Malibu
+      1  Madrid
+      1  Lyon
+      1  Luxembourg
+      1  Liberia
+      1  Larnaka
+      1  Kigali
+      1  Kiev
+      1  Jordanie
+      1  Johannesburg
+      1  Jalalabad
+      1  Jackson
+      1  Homs
+      1  Hiroshima
+      1  Hébron
+      1  Haut-Karabagh
+      1  Hamilton
+      1  Hambourg
+      1  Haïfa
+      1  Guzman
+      1  Guantanamo
+      1  Goebbels
+      1  Gabon
+      1  Francisco
+      1  Francfort
+      1  Flint
+      1  Finistère
+      1  Equateur
+      1  Emirats
+      1  Drôme
+      1  Donetsk
+      1  Doha
+      1  Djibouti
+      1    Deir_ez-Zor
+      1  Daraya
+      1  Dakar
+      1  Daghestan
+      1  Daesh
+      1  Daech
+      1  Courtrai
+      1  Copenhague
+      1  Concarneau
+      1  Cizre
+      1  Chypre
+      1  Christchurch
+      1  Cély
+      1  Caracas
+      1  Canterbury
+      1  Canberra
+      1  Caire-Alexandrie
+      1  Bulgarie
+      1  Buenos
+      1  Brooklyn
+      1  Brasília
+      1  Bilbao
+      1  Biélorussie
+      1  Belfast
+      1  Baruch
+      1  Bangui
+      1  Bahamas
+      1  Bad
+      1   Asie_De_Bangkok
+      1  Arkansas
+      1  Aquitaine
+      1  Angleterre
+      1  Amiens
+      1  Al-Qaryatayn
+      1  Alger
+      1  Aden
+      1  Abidjan
+      1 
+------------------------
+PERSONNES
+------------------------
+     46  Donald Trump 
+     19  François Hollande 
+     16  Bernie Sanders 
+     15  Clinton 
+     13  Angela Merkel 
+     12  Hillary Clinton 
+     12  Hassan Rohani 
+     12  Bachar Al-Assad 
+      9  Salah Abdeslam 
+      9  Manuel Valls 
+      9  David Cameron 
+      9  Bush 
+      8  Lisa Mandel 
+      8  Hillary/NC Clinton 
+      8  Giulio Regeni 
+      7  iranien/ADJ 
+      6  Vladimir Poutine 
+      6  François 
+      5  Marco Rubio 
+      5  John Kerry 
+      5  Donald Trump/NC 
+      5  Antonin Scalia 
+      4  Super Tuesday 
+      4  Nadejda Savtchenko 
+      4  Julian Assange 
+      4  Donald/NC Trump 
+      3  Tsai Ing-wen 
+      3  Pedro Sanchez 
+      3  Mohamed Abrini 
+      3  Mariano Rajoy 
+      3  Laurent Gbagbo 
+      3  Kamel Daoud 
+      3  Jean-Marc Ayrault 
+      3  iranien 
+      3  Erdogan 
+      3  Dilma Rousseff 
+      3  Christophe Ayad 
+      3  Chris Christie 
+      3  Bernard Cazeneuve 
+      3  Ben Carson 
+      2  tunisien Ben Ali 
+      2  Thomas Piketty 
+      2  Thomas Kiefer 
+      2  Serge Tisseron 
+      2  Rohani 
+      2  Robert Fico 
+      2  Reda Kriket 
+      2  Paul Kagamé 
+      2  Michael Bloomberg 
+      2  Matteo Renzi 
+      2  Lionel Zinsou 
+      2  Laurent Fabius 
+      2  John Kasich 
+      2  Jim Gilmore 
+      2  Jean-Yves Le/DET Drian 
+      2  Jean-Marie Le/DET Pen 
+      2  Hitler 
+      2  Frédéric Bobin 
+      2  Fayçal Cheffou 
+      2  Faraj Benoît Camurat 
+      2  Edward Snowden 
+      2  Donald Tusk 
+      2  Denis Sassou-Nguesso 
+      2  David Li 
+      2  Christophe Naudin 
+      2  Christine Lagarde 
+      2  Charles Michel 
+      2  Carly Fiorina 
+      2  Can Dündar 
+      2  Camille Grand 
+      2  Cameron 
+      2  Boris Johnson 
+      2  Boko Haram 
+      2  Beppe Grillo 
+      2  Ben Guerdane 
+      2  Barack/DET Obama 
+      2  Bab Al-Salama 
+      2  Antoine Bondaz 
+      2  Alexis Tsipras 
+      1  Zine El-Abidine Ben Ali 
+      1  Zhang Kai 
+      1  Zein Al-Rifai Zein Al-Rifai 
+      1  Yves Gonzales-Quijano 
+      1  Yvan Mayeur Reçu 
+      1  Yoo Som-na 
+      1  Yann Gwet 
+      1  Yanis Varoufakis 
+      1  Yahya Jammeh 
+      1  Xi Jinping 
+      1  Xavier Niel 
+      1  Wolfgang Streeck 
+      1  Witold Waszczykowski 
+      1  William Ruto 
+      1  Werner Faymann 
+      1  Wang/DET Baoan 
+      1  Wang Baoan 
+      1  Volodymyr Groïsman 
+      1  Valls/NC 
+      1  Valls 
+      1  Valérie Niquet 
+      1  Valérie Boyer 
+      1  Umberto Eco 
+      1  Tuesday/ET Vincent/ET Michelot 
+      1  Trudeau 
+      1  Toshiya Watanabe 
+      1   Thomas_Piketty 
+      1  Ted/ET Cruz/ET 
+      1  Ted Cruz 
+      1  tchadien 
+      1  Tayyip Erdogan 
+      1  Sven Mary 
+      1  Steven Ekovich 
+      1  Stephen/ET Hawking/ET 
+      1  Soumaya Gharsallah-Hizem 
+      1  Sophie Bessis 
+      1  Sergio Moro 
+      1  Serge Brammertz 
+      1  Sean Penn 
+      1  Seamus Daly 
+      1  Scott Walker 
+      1  Sassou-Nguesso 
+      1  Sarah Palin 
+      1  Sanders 
+      1  Samuel Cogolati 
+      1  Samir Bouabout 
+      1  Samar Yazbek 
+      1  Salim Benghalem 
+      1   Salah_Abdeslam 
+      1  Rousseff 
+      1  Robert Pickton 
+      1  Roberto Saviano 
+      1  Rick Snyder 
+      1  Rick Santorum 
+      1  Richard Florida 
+      1  Renzi 
+      1  Ren Zhiqiang 
+      1  Renee Rabinowitz 
+      1  Renato Bialetti 
+      1  Reinhold/ET Hanning/ET 
+      1  Reem Fadel 
+      1  Rebelo de Sousa 
+      1  Reagan 
+      1  Raul Castro 
+      1  Raphaël Pitti 
+      1  Randa Kassis 
+      1  Privert 
+      1  Porter Ranch 
+      1  Porter/ET Ranch/ET 
+      1  Porochenko 
+      1  Pierre Nkurunziza 
+      1  Pierre Moscovici 
+      1  Pierre Mélandri 
+      1  Pierre Lellouche 
+      1  Peter Saunders 
+      1  Peter Dahlin 
+      1  Pedro Passos 
+      1  Pedro Miret 
+      1  Pawel Krzysiek 
+      1  Pavel Filip 
+      1  Paul Manafort 
+      1  Paul 
+      1  Patrick Kanner 
+      1  Patrick Haimzadeh 
+      1  Park Geun-hye 
+      1  Pablo Iglesias 
+      1  Ozan Kose 
+      1  Oscar/NC 
+      1  Omar Al-Bachir 
+      1  Nicolas Sarkozy 
+      1  Nicolas-Jean Brehon 
+      1  Nicolas Chamussy 
+      1  Nicolas 
+      1  Nicholas Dungan 
+      1  Nguyen Phu Trong 
+      1  Nathalie Berger 
+      1  Nadia Savtchenko 
+      1  Nabil Fadli 
+      1  Moussa Ibn Yacoub 
+      1  Mouloud Baal 
+      1  Mohammed VI 
+      1  Mohammed Ben Nayef 
+      1  Mohammed Ben 
+      1  Mohammed Al-Qeq 
+      1  Mohammed Abou 
+      1  Mohamed Morsi 
+      1  Mohamed Belkaid 
+      1  Milos Zeman 
+      1  Mike Huckabee 
+      1  Michel Sapin 
+      1  Michael Sandel 
+      1  Michael Fallon/NC 
+      1  Merrick Garland 
+      1  Mein/ADJ Kampf/NC 
+      1  Mazen Darwich 
+      1  Max Havelaar 
+      1  Mauricio Macri 
+      1  Matthieu Rey 
+      1  Matthias Müller 
+      1  Matthew Trevithick 
+      1  Mathieu Duchâtel 
+      1  Martin Schulz 
+      1  Martin O' Malley 
+      1  Martin Fayulu 
+      1  Marla Maples 
+      1  Marisol Touraine 
+      1  Mario Vargas Llosa 
+      1  Marion/NC Maréchal-Le 
+      1  Mario Bros 
+      1  Marina Litvinenko 
+      1  Marcelo Rebelo de Sousa 
+      1  Marcelo Odebrecht 
+      1  Manuel/DET Valls 
+      1  Mahmoud Hussein 
+      1  Madjid Zerrouky 
+      1  Luiz Inacio Lula da Silva 
+      1  Louai Abo Aljoud 
+      1  Lloyd Blankfein 
+      1  Lee Po 
+      1  Lassina Zerbo 
+      1  Lamberto Zannier 
+      1  Kung Fu 
+      1  kirghize 
+      1  King Kong 
+      1  Khalifa Ghweil 
+      1  Khalid Zerkani 
+      1  Khalid El Bakraoui 
+      1  Khalid Al-Barnawi 
+      1  kényan 
+      1  Kensuke Miyazaki 
+      1  Ken Goldstein 
+      1  Kayla Mueller 
+      1  Kate Del Castillo 
+      1  Karine Berger 
+      1  Kanhaiya Kumar 
+      1  Kamal Al-Labwani 
+      1  Julio Garcia Espinosa 
+      1  Julian/ET Assange/ET 
+      1  Julian/DET Assange/NC 
+      1  José Veiga 
+      1  Joseph Yacoub 
+      1  Joseph Muscat 
+      1  Joseph Goebbels 
+      1  José Mujica 
+      1  Jorge Bergoglio 
+      1  John Florio 
+      1  John Brennan 
+      1  Joe Biden 
+      1  Jocelerme Privert 
+      1  Joaquin Guzman Loera 
+      1  Joaquin Guzman 
+      1  Joachim Gauck 
+      1  Jimmy Savile 
+      1  Jean-Pierre Filiu 
+      1  Jean-Pierre Bemba 
+      1  Jean-Luc Laurent 
+      1  Jean-Luc Gaffard 
+      1  Jean-Claude Juncker 
+      1  Jean-Bernard Lévy 
+      1  Jason Stearns 
+      1  Jason Rezaian 
+      1  Jan Jambon 
+      1  Janet Yellen 
+      1  Jane/NC Williams 
+      1  James Comey 
+      1  Jamal/NC Maarouf 
+      1  Jakob Denzinger 
+      1  Jacques Follorou 
+      1  Jacqueline Sauvage 
+      1  Isaac Zida 
+      1  Idriss Déby 
+      1  Iain Duncan Smith 
+      1  Huang Cheng-yi 
+      1  Htin Kyaw 
+      1  Houssam Kokache 
+      1  Hinkley Point/NC Auditionné 
+      1  Hinkley Point 
+      1  Hillary/DET Clinton 
+      1  Hillary Clinton Robby Mook 
+      1  Hillary Clinton Hillary Clinton 
+      1  Hervé Mariton 
+      1  Helmut Kohl 
+      1  Haut/NC Karabakh 
+      1  Hatton Garden/NC 
+      1  Hassan Khomeyni 
+      1  Hasna Aït Boulahcen 
+      1  Harvard Michael Sandel 
+      1  Harry » 
+      1  Hanan Al-Hroub 
+      1  haïtien 
+      1  Guy Dutheil 
+      1  Guido Westerwelle 
+      1  Goldman Sachs 
+      1  Godefroid Niyombare 
+      1  Gisela Mota 
+      1  Giorgia Meloni 
+      1  Gianroberto Casaleggio 
+      1  Ghyslain Wattrelos 
+      1  George W 
+      1  Georges Dologuélé 
+      1  George Osborne 
+      1  George Clooney 
+      1  Franziska Brantner 
+      1  François Margolin 
+      1  Francis Pisani 
+      1  Florence Hartmann Billet 
+      1  Florence Hartmann 
+      1  Firas/NC Al-Souri 
+      1  Fethullah Gülen 
+      1  Felipe VI 
+      1  Federica Mogherini 
+      1  Federica Guidi 
+      1  Fausto Piano 
+      1  Faustin Archange_Touadéra 
+      1  Faustin Archange Touadéra 
+      1  Fang Binxing 
+      1  Eric Trump 
+      1  Erdogan Filiz Akinci 
+      1  Enrique Peña Nieto 
+      1  Emmanuel Droit 
+      1  Elio/DET Di/ET Rupo/ET 
+      1  Ehoud Olmert 
+      1  Eddine Ouali 
+      1  Dwight Watkins 
+      1  Donald/NC Trump/DET 
+      1  Donald Jr 
+      1  Donald/ET Trump/ET Cruz/ET 
+      1  Donald/DET Trump/NC 
+      1  Donald  
+      1  Domenico De Sole 
+      1  Dilma Rousseff/NC 
+      1  Dilma/NC Rousseff 
+      1  Diego Dzodan 
+      1  Denise Lebeau-Marianna 
+      1   de_Gaulle 
+      1  David Plouffe 
+      1  David Natera Febres 
+      1  David Guttenfelder 
+      1  David Gunnlaugsson 
+      1  David Germanaud 
+      1  David/DET Cameron 
+      1  Dalli 
+      1  Dacian Ciolos 
+      1  Clinton Course 
+      1  Christophe Mincke 
+      1  Christophe Deloire 
+      1  Christophe Châtelot 
+      1  Christiane Taubira 
+      1  Cheikh Maskine 
+      1  Charles Dennery 
+      1  Charles Brown 
+      1  Ceyda Torun 
+      1  Carolina Bescansa 
+      1  Carlos Pages 
+      1  Carles Puigdemont 
+      1  Carl Decaluwé 
+      1  Cameron/NC 
+      1  Buffett 
+      1  Bruno/NC Le/DET Maire/NC 
+      1  Bosnie Radovan Karadzic 
+      1  Boris Nemtsov 
+      1  Boris Cheshirkov 
+      1  Boko/DET Haram 
+      1  Blé Goudé 
+      1  Blaise Compaoré 
+      1  Bill Cosby 
+      1  Bernie Sanders/NC 
+      1  Beppe/DET Grillo 
+      1  Benyamin Nétanyahou/NC 
+      1  Benyamin Nétanyahou 
+      1  Ben Laden 
+      1  Ben/DET Carson/NC 
+      1  Ben Ali 
+      1  Béatrice Stockly 
+      1  Beate Klarsfeld 
+      1  Barack Obama 
+      1  Ban Ki-moon 
+      1  Bachar/DET Al-Assad 
+      1  Bachar al-Assad 
+      1  Babak Zanjani 
+      1  Aurore Martin 
+      1  Ashraf Ghani 
+      1  Artur Mas 
+      1  Arnauld Spiner 
+      1  Arnaldo Otegi 
+      1  Antoine Hennion 
+      1  Anissa Makhlouf 
+      1  André Lanata 
+      1  Andreas Lubitz 
+      1  Anders Kompass 
+      1  Anders/DET Behring/NC Breivik 
+      1  Amad Umar Agha 
+      1  Alexandre Loukachenko 
+      1  Alejandro Nieto 
+      1  Alejandro Aravena 
+      1  Alassane Ouattara 
+      1  Alain Trannoy 
+      1  Alain Renaut 
+      1  Alain Pierret 
+      1  Akira Amari 
+      1  Ahmad Al-Faqi 
+      1  Adéa Guillot 
+      1  Abou Sayyaf 
+      1  Abdulhamit Bilici 
+      1  Abdelrahmane Al-Qadouli 
+      1  Abdelhamid Abaaoud 
+      1  Abdel Fattah Al-Sissi 
+      1 

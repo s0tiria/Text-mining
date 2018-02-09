@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//FR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projet pour le cours Projet encadré 2 - Boîte à Outils" />
+    <meta name="author" content="Sotiria BAMPATZANI &amp; Morgane DEHARENG" />
+	
+    <title>BaO | Projet</title>
+	
+	<link rel="icon" type="image/png" href="./images/ico/favicon.png" sizes="16x16" />
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+     <section id="coming-soon">        
+         <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">                    
+                    <div class="text-center coming-content">
+                        <h1>En construction</h1>
+                        <p>&#192; suivre...<br /> Sotiria &amp; Morgane</p>
+                    </div>                    
+                </div>
+                <div class="col-sm-12">
+                    <div class="time-count">
+                        <ul id="countdown">
+                            <li class="angle-one">
+                                <span class="days time-font">00</span>
+                                <p>&#160;Jours</p>
+                            </li>
+                            <li class="angle-two">
+                                <span class="hours time-font">00</span>
+                                <p>Heures</p>
+                            </li>
+                            <li class="angle-one">
+                                <span class="minutes time-font">00</span>
+                                <p class="minute">Mins</p>
+                            </li>                            
+                            <li class="angle-two">
+                                <span class="seconds time-font">00</span>
+                                <p>Secs</p>
+                            </li>               
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </div>       
+    </section>
+
+    <section id="coming-soon-footer" class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="copyright-text text-center">
+                    <p>&#169; M1 TAL 2016/2017. Sotiria BAMPATZANI &amp; Morgane DEHARENG</p>
+                </div>
+            </div>
+        </div>       
+    </section>
+    
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/coundown-timer.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript">
+        //Countdown js
+        $("#countdown").countdown({
+            date: "31 may 2017 12:00:00",
+            format: "on"
+        },      
+        function() {
+            // callback function
+        });
+    </script>
+    
+</body>
+</html>

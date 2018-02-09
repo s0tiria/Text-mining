@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//FR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projet pour le cours Projet encadré 2 - Boîte à Outils" />
+    <meta name="author" content="Sotiria BAMPATZANI &amp; Morgane DEHARENG" />
+	
+    <title>BaO | Projet</title>
+	
+	<link rel="icon" type="image/png" href="./images/ico/favicon.png" sizes="16x16" />
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header id="header">   
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+					<a class="navbar-brand" href="index.xhtml">
+						<h1><img src="images/logo.png" alt="logo" /></h1>
+					</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a href="index.xhtml">Home</a></li>
+						<li class="dropdown"><a href="presentation.xhtml">Présentation</a></li>
+						<li class="active"><a href="#">Boîtes à Outils<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="bao1.xhtml">BaO 1<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao2.xhtml">BaO 2<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao3.xhtml">BaO 3<i class="fa fa-angle-down"></i></a></li>
+								<li class="active"><a href="bao4.xhtml">BaO 4<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#">Entités Nommées<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="entites-nommees.xhtml">Présentation<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="sem.xhtml">SEM<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="trameur.xhtml">Le Trameur<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="http://baoprojet.wordpress.com" target="_blank">Blog<i class="fa fa-angle-down"></i></a></li>
+					</ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Boîte à Outils 4</h1>
+                            <p>Représentation graphique des patrons morphosyntaxiques</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#page-breadcrumb-->
+
+    <section id="company-information">
+        <div class="container">
+            <div class="row">
+			<br/>
+				<p><b>Entrée :</b> 3210-cordial-nomnom.txt</p>
+				<p><b>Sortie :</b> graphe</p>
+				<p class="text-justify wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">
+					<div class="cen">
+						<img src="./images/site/bao4.png" alt="Représentation BaO4" style="width:550px; height:200px;" />
+					</div>
+				</p>
+				<br/><br/>
+				<p><b>Explications : </b></p>
+                <p>Pour réaliser cette dernière boite à outils, il nous faut télécharger une archive contenant un petit programme exécutable sur la page iCampus. Ce programme s'utilise en invite de commande Windows de la façon suivante :
+					<pre><em>patron2graphe.exe "encodage" fichier</em></pre>
+				</p>
+				<p>
+				Exemple :
+					<pre><em>patron2graphe.exe "utf-8" 3210-cordial-nomnom.txt</em></pre>
+				</p>
+				<p>Le résultat est un graphe comme celui-ci :</p>
+				<p class="text-justify wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">
+					<div class="cen">
+						<img src="./images/site/graphe1.png" alt="Graphe 1" style="width:550px; height:300px;" />
+					</div>
+				</p>
+				<br/><br/>
+				<p>Comme on peut le voir, le graphe n'est pas très lisible. Par souci de clarté, nous pouvons utiliser un motif pour cibler la recherche des patrons. Le programme s'utilise alors de la façon suivante :
+				<pre><em>patron2graphe.exe "encodage" fichier motif</em></pre>
+				</p>
+				<p>
+				Exemple :
+					<pre><em>patron2graphe.exe "iso-8859-1" patrons-1.txt motif-iso-8859-1.txt</em></pre>
+				</p>
+				<p>Le résultat est un graphe comme celui-ci :</p>
+				<p class="text-justify wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">
+				<div class="cen">
+						<img src="./images/site/graphe2.png" alt="Graphe 2" style="width:550px; height:300px;" />
+					</div>
+				</p>
+				<br/><br/>
+				<p>Cet exemple, fourni dans le mode d'emploi du programme, effectue une recherche autour du pôle polit- . Toutefois, cette utilisation ne convient pas au traitement de nos fichiers : il nous faudrait en effet trouver un motif, ce qui est infaisable dans les listes d'entités nommées que nous avons.</p>
+				<p>Comme nous l'avons vu, la première méthode produit un graphe illisible et la seconde méthode n'est pas appropriée à la nature de nos fichiers. Nous avons donc expérimenté deux autres méthodologies, que nous détaillons dans la rubrique "Entités nommées".</p>
+            </div>
+        </div>
+    </section>
+	
+	<div class="left">
+        <a href="./bao4.xhtml" class="btn btn-common">Haut de page</a>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&#169; M1 TAL 2016/2017. Sotiria BAMPATZANI &amp; Morgane DEHARENG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</footer>
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>

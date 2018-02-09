@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TEI>
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Export Graphe Annotation sur la Trame d'un texte via Le Trameur 12.152</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>...</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl> ... </bibl>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <p>...</p>
+        </encodingDesc>
+    </teiHeader>
+<text>
+<body>
+<graph type="directed" name="grapheAnnot">
+<node positions="3107" labelnode="3107"/>
+<node positions="3105" labelnode="3105"/>
+<node positions="3075" labelnode="3075"/>
+<node positions="6431" labelnode="6431"/>
+<node positions="6477" labelnode="6477"/>
+<node positions="1120_1122_1124" labelnode="1120_1122_1124"/>
+<node positions="8" labelnode="8"/>
+<node positions="6435" labelnode="6435"/>
+<node positions="14254" labelnode="14254"/>
+<node positions="12400_12402" labelnode="12400_12402"/>
+<node positions="12428" labelnode="12428"/>
+<arc from="3107" to="3105" labelfrom="3107" labelto="3105" labelarc="est"/>
+<arc from="3105" to="3075" labelfrom="3105" labelto="3075" labelarc="de"/>
+<arc from="6431" to="6477" labelfrom="6431" labelto="6477" labelarc="oppose"/>
+<arc from="6431" to="1120_1122_1124" labelfrom="6431" labelto="1120_1122_1124" labelarc="participe"/>
+<arc from="6477" to="1120_1122_1124" labelfrom="6477" labelto="1120_1122_1124" labelarc="participe"/>
+<arc from="8" to="6477" labelfrom="8" labelto="6477" labelarc="allie"/>
+<arc from="6431" to="6435" labelfrom="6431" labelto="6435" labelarc="allie"/>
+<arc from="14254" to="3075" labelfrom="14254" labelto="3075" labelarc="membre"/>
+<arc from="1120_1122_1124" to="12400_12402" labelfrom="1120_1122_1124" labelto="12400_12402" labelarc="situe"/>
+<arc from="3075" to="14254" labelfrom="3075" labelto="14254" labelarc=""/>
+<arc from="3075" to="12400_12402" labelfrom="3075" labelto="12400_12402" labelarc="relationsTendues"/>
+<arc from="12400_12402" to="14254" labelfrom="12400_12402" labelto="14254" labelarc="membre"/>
+<arc from="12428" to="12400_12402" labelfrom="12428" labelto="12400_12402" labelarc="ex-president"/>
+<arc from="6477" to="12400_12402" labelfrom="6477" labelto="12400_12402" labelarc="president"/>
+</graph>
+</body>
+</text>
+</TEI>

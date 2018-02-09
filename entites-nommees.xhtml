@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//FR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projet pour le cours Projet encadré 2 - Boîte à Outils" />
+    <meta name="author" content="Sotiria BAMPATZANI &amp; Morgane DEHARENG" />
+	
+    <title>BaO | Projet</title>
+	
+	<link rel="icon" type="image/png" href="./images/ico/favicon.png" sizes="16x16" />
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header id="header">   
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+					<a class="navbar-brand" href="index.xhtml">
+						<h1><img src="images/logo.png" alt="logo" /></h1>
+					</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a href="index.xhtml">Home</a></li>
+						<li class="dropdown"><a href="presentation.xhtml">Présentation</a></li>
+						<li class="dropdown"><a href="#">Boîtes à Outils<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="bao1.xhtml">BaO 1<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao2.xhtml">BaO 2<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao3.xhtml">BaO 3<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao4.xhtml">BaO 4<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="active"><a href="#">Entités Nommées<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="active"><a href="entites-nommees.xhtml">Présentation<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="sem.xhtml">SEM<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="trameur.xhtml">Le Trameur<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="http://baoprojet.wordpress.com" target="_blank">Blog<i class="fa fa-angle-down"></i></a></li>
+					</ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Reconnaissance des entités nommées (REN)</h1>
+                            <p>Named-entity recognition (NER)</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#page-breadcrumb-->
+
+    <section id="company-information">
+        <div class="container">
+            <div class="row">
+			<br/>
+                <p>Dans notre projet, nous avons décidé d'extraire, à partir des flux RSS, les entités nommées qui appartiennent aux catégories "Personnes" et "Lieux". Plus précisémment, nous avons extrait tous les noms propres et les noms des pays se trouvant dans notre corpus afin d'établir par la suite des relations entre ces noms. Le domaine des entités nommées étant relativement complexe, nous avons décidé d'en faire ci-dessous une brève présentation.</p>
+                <p>La notion des entités nommées a été introduite dans la sixième conférence MUC<sup>1,2</sup>. Mais comment définit-on les entités nommées ? Et, par la suite, quelle formule doit-on choisir pour leur catégorisation ? Existe-il une annotation globale ?</p> 
+				<p>Selon Thierry Poibeau<sup>3</sup>, les entités nommées sont des séquences, notamment des noms propres, considérés comme des éléments essentiels pour une prise de connaissance rapide du contenu d'un document. A cette notion, Eric Gaussier et François Yvon<sup>4</sup> ajoutent que ces mots, ou encore groupes de mots, sont généralement absents des dictionnaires usuels et ils identifient soit des noms propres (comme des personnes, des lieux ou des organisations) soit des quantités mesurables (comme des dates et des valeurs numériques ou monétaires).</p>
+				<p>En ce qui concerne l'annotation des entités nommées, et par conséquent leur reconnaissance, nous nous sommes aperçues, en cherchant dans la littérature, qu'une annotation dite "globale" de ces entités n'existe pas. Il en ressort que les entités nommées ne se limitent pas à une catégorisation ou à une mention, et que chaque décision prise à leur sujet doit faire l'objet d'une démarche de réflexion préalable<sup>5</sup>.</p>
+				<p>Ce qu'il faut retenir, finalement, c'est que les entités nommées sont des unités linguistiques au sein de réalisations informatiques et démontrent bien le lien existant entre la linguistique, l'informatique et le TAL. Leur absence de définition les apparente en outre bien plus à l'objet d'expérimentation d'un ingénieur qu'à l'objet d'étude d'un théoricien, ce qui explique les difficultés qui se présentent lors de leur reconnaissance à l'aide d'outils informatiques<sup>5</sup>.</p>
+				<br/><br/>
+				<p class="text-justify wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms"><i><b>Bibliographie :</b><br/>
+				[1] Sekine, S., Elisabete Ranchhod, E. (2009). Named Entities: Recognition, classification and use. Amsterdam : John Benjamins Publishing.<br/>
+				[2] Friburger, N. (2006). Linguistique et reconnaissance automatique des noms propres. Meta. Volume 51, Numéro 4, décembre, 2006, pp. 637–650.<br/>
+				[3] Poibeau, T. (2001). Traitement automatique du contenu textuel. Paris : Lavoisier.<br/>
+				[4] Gaussier, E., Yvon, F. (2011). Modèles statistiques pour l'accès à l'information textuelle. Paris : Lavoisier.<br/>
+				[5] Nouvel, D., Ehrmann, M., Rosset, S. (2015). Les entités nommées pour le traitement automatique des langues. ISTE Editions.
+				</i></p>
+            </div>
+        </div>
+    </section>
+	
+	<div class="left">
+        <a href="./entites-nommees.xhtml" class="btn btn-common">Haut de page</a>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&#169; M1 TAL 2016/2017. Sotiria BAMPATZANI &amp; Morgane DEHARENG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>

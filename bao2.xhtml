@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//FR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projet pour le cours Projet encadré 2 - Boîte à Outils" />
+    <meta name="author" content="Sotiria BAMPATZANI &amp; Morgane DEHARENG" />
+	
+    <title>BaO | Projet</title>
+	
+	<link rel="icon" type="image/png" href="./images/ico/favicon.png" sizes="16x16" />
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header id="header">   
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+					<a class="navbar-brand" href="index.xhtml">
+						<h1><img src="images/logo.png" alt="logo" /></h1>
+					</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a href="index.xhtml">Home</a></li>
+						<li class="dropdown"><a href="presentation.xhtml">Présentation</a></li>
+						<li class="active"><a href="#">Boîtes à Outils<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="bao1.xhtml">BaO 1<i class="fa fa-angle-down"></i></a></li>
+								<li class="active"><a href="bao2.xhtml">BaO 2<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao3.xhtml">BaO 3<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao4.xhtml">BaO 4<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#">Entités Nommées<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="entites-nommees.xhtml">Présentation<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="sem.xhtml">SEM<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="trameur.xhtml">Le Trameur<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="http://baoprojet.wordpress.com" target="_blank">Blog<i class="fa fa-angle-down"></i></a></li>
+					</ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Boîte à Outils 2</h1>
+                            <p>&#201;tiquetage</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#page-breadcrumb-->
+
+    <section id="company-information">
+        <div class="container">
+            <div class="row">
+                <h2 class="cen">L'étiquetage automatique avec Treetagger</h2>
+				<br/>
+				<p><b>Entrée :</b> tous les fichiers XML du dossier 2016 de la rubrique "International".</p>
+				<p><b>Sortie :</b> 3210-etiquete.xml, UTF-8</p>
+				<p class="text-justify wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">
+					<div class="cen">
+						<img src="./images/site/bao2.png" alt="Représentation BaO2 - Treetagger" style="width:500px; height:250px;" />
+					</div>
+				</p>
+				<br/><br/>
+				<p><b>Explications : </b></p>
+				<p>La première partie du script se base celui de la BaO1, la seconde partie est un sous-programme qui réalise l'étiquetage.</p>
+				<p>
+				Comme lors de la BaO1, le script "BAO2.pl" prend en paramètre :
+					<ol>
+						<li>l'année <i>(dans le script "$ARGV[0]")</i></li>
+						<li>le numéro de la rubrique choisie <i>(dans le script "$ARGV[1]")</i></li>
+					</ol>
+				</p>
+				<p>Commande:
+				<pre><em>perl BAO2.pl 2016 3210</em></pre>
+				</p>
+				<p>Dans un premier temps, ce script va parcourir toute l'arborescence, ensuite il va extraire et étiqueter le contenu textuel des balises title et description des fichiers .xml de la rubrique choisie (exemple : 0,2-3210,.-0,0.xml).</p>
+				<p>Le fichier produit est un <a href="./resultats/bao2/3210-etiquete.xml" target="_blank">fichier XML</a> étiqueté avec Treetagger.</p>
+				<br/>
+				<h2 class="cen">L'étiquetage manuel avec Cordial</h2>
+				<br/>
+				<p><b>Entrée :</b> 3210-iso.txt, ISO-8859-15</p>
+				<p><b>Sortie :</b> 3210.cnr, ISO-8859-15</p>
+				<p class="text-justify wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">
+				<div class="cen">
+					<img src="./images/site/bao2cordial.png" alt="Représentation BaO2 - Cordial" style="width:500px; height:150px;" />
+				</div>
+				</p>
+				<br/><br/>
+                <p><b>Explications : </b></p>
+				<p>Le script de la BaO1 nous a fourni un fichier TXT en UTF-8 dont nous aurions dû nous servir pour réaliser l'étiquetage. Mais la version de Cordial que nous possédons ne supporte que des fichiers encodés en ISO. Nous avons voulu utiliser la commande iconv, mais nous nous sommes heurtées à quelques problèmes d'encodage, que nous détaillons <a href="https://baoprojet.wordpress.com/2017/05/10/problemes-dencodage/" target="_blank">ici</a>. Nous avons donc très légèrement modifié le <a href="./codes/BAO1-v2.txt" target="_blank">script de la BaO1</a> pour prendre en compte ces problèmes d'encodage.</p>
+				<p>Le fichier produit est un <a href="./resultats/bao2/3210.cnr" target="_blank">fichier CNR</a> étiqueté avec Cordial.</p>
+				<br/>
+            </div>
+        </div>
+    </section>
+
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">Script - BaO 2</h1>
+                            <p>Veuillez cliquer ici pour afficher le code...</p>
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="tour-button">
+                                <a href="./codes/BAO2.txt" target="_blank" class="btn btn-common">Code &lt;/&gt;</a>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#action-->
+	
+	<div class="left">
+	<br/><br/>
+        <a href="./bao2.xhtml" class="btn btn-common">Haut de page</a>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&#169; M1 TAL 2016/2017. Sotiria BAMPATZANI &amp; Morgane DEHARENG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>

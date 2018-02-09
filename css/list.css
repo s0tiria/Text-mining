@@ -1,0 +1,83 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+ul.list {
+  list-style:none;
+  width:250px;
+  margin:25px auto;
+ }
+
+li.list {
+  text-align:center;
+  margin-bottom:25px;
+  position:relative;
+  padding-left:50px;
+}
+
+a.list {
+  text-decoration:none;
+  color:darkblue;
+  font-weight:bold;
+  display:block;
+  background:white;
+  height:50px;
+  border:1px solid darkblue;
+  position:relative;
+  border-radius: 0 8px 8px 0;
+  line-height:50px;
+}
+
+
+a:before {
+  color:white;
+  background:darkblue;
+  width:50px;
+  height:50px;
+  margin-left:-50px;
+  line-height:80px;
+  position:absolute;
+  top:-1px;
+  left:0;
+  font-size:0.75em;
+  text-align:center;
+}
+
+li:before,
+li:after {
+  position:absolute;
+  content:"";
+  left:0;
+  border:25px solid transparent;
+  height:0;
+  width:0;
+  z-index: 25;
+}
+
+li:before {
+  top:0;
+  border-top-color:white;
+}
+
+li:after {
+  top:100%;
+  border-top-color:darkblue;;
+}
+
+.one:before {
+    content:"Step 1";
+}
+
+.two:before {
+    content:"Step 2";
+}
+
+.three:before {
+    content:"Step 3";
+}
+
+.four:before {
+    content:"Step 4";
+}

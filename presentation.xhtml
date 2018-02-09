@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//FR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projet pour le cours Projet encadré 2 - Boîte à Outils" />
+    <meta name="author" content="Sotiria BAMPATZANI &amp; Morgane DEHARENG" />
+	
+    <title>BaO | Projet</title>
+	
+	<link rel="icon" type="image/png" href="./images/ico/favicon.png" sizes="16x16" />
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header id="header">   
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+					<a class="navbar-brand" href="index.xhtml">
+						<h1><img src="images/logo.png" alt="logo" /></h1>
+					</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a href="index.xhtml">Home</a></li>
+						<li class="active"><a href="presentation.xhtml">Présentation</a></li>
+						<li class="dropdown"><a href="#">Boîtes à Outils<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="bao1.xhtml">BaO 1<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao2.xhtml">BaO 2<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao3.xhtml">BaO 3<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao4.xhtml">BaO 4<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#">Entités Nommées<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="entites-nommees.xhtml">Présentation<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="sem.xhtml">SEM<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="trameur.xhtml">Le Trameur<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>						<li class="dropdown"><a href="http://baoprojet.wordpress.com" target="_blank">Blog<i class="fa fa-angle-down"></i></a></li>
+					</ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Présentation</h1>
+                            <p></p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#page-breadcrumb-->
+
+    <section id="company-information">
+        <div class="container">
+            <div class="row">
+                <br/>
+				<p>L’objectif de notre projet est d'extraire des patrons morphosyntaxiques sur base des flux RSS du journal "Le Monde" de l'année 2016 et d'utiliser ces patrons pour réaliser des graphes. Ces graphes pourront par la suite servir de base à la construction d'une ontologie.</p>
+				<p>L'extraction s'effectue en plusieurs étapes à l'aide de scripts Perl :</p>
+				<p>Les flux RSS sont organisés selon une arborescence bien précise. La première étape est de parcourir cette arborescence et d'extraire les titres et les descriptions des flux RSS.</p>
+				<p>La deuxième étape porte sur l'étiquetage des titres et des descriptions obtenus au moyen des logiciels Treetagger et Cordial. </p>
+				<p>La troisième étape a pour but de rechercher des patrons morphosyntaxiques choisis dans les fichiers étiquetés.</p>
+				<p>La quatrième et dernière étape concerne la création des graphes et les représentations graphiques des patrons extraits précédemment.</p>
+				<br/>
+				<br/>
+				<p class="text-justify wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">
+					<div class="cen">
+						<img src="./images/site/baos.png" alt="Représentation BaO" style="width:1000px; height:300px;" />
+					</div>
+				</p>
+            </div>
+        </div>
+    </section>
+	
+	<div class="left">
+        <a href="./presentation.xhtml" class="btn btn-common">Haut de page</a>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&#169; M1 TAL 2016/2017. Sotiria BAMPATZANI &amp; Morgane DEHARENG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>

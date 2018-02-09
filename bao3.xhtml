@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//FR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projet pour le cours Projet encadré 2 - Boîte à Outils" />
+    <meta name="author" content="Sotiria BAMPATZANI &amp; Morgane DEHARENG" />
+	
+    <title>BaO | Projet</title>
+	
+	<link rel="icon" type="image/png" href="./images/ico/favicon.png" sizes="16x16" />
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header id="header">   
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+					<a class="navbar-brand" href="index.xhtml">
+						<h1><img src="images/logo.png" alt="logo" /></h1>
+					</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a href="index.xhtml">Home</a></li>
+						<li class="dropdown"><a href="presentation.xhtml">Présentation</a></li>
+						<li class="active"><a href="#">Boîtes à Outils<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="bao1.xhtml">BaO 1<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao2.xhtml">BaO 2<i class="fa fa-angle-down"></i></a></li>
+								<li class="active"><a href="bao3.xhtml">BaO 3<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao4.xhtml">BaO 4<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#">Entités Nommées<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="entites-nommees.xhtml">Présentation<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="sem.xhtml">SEM<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="trameur.xhtml">Le Trameur<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="http://baoprojet.wordpress.com" target="_blank">Blog<i class="fa fa-angle-down"></i></a></li>
+					</ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Boîte à Outils 3</h1>
+                            <p>Recherche des patrons morphosyntaxiques</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#page-breadcrumb-->
+
+    <section id="company-information">
+        <div class="container">
+            <div class="row">
+                <h1 class="cen">La recherche des patrons dans les fichiers étiquetés avec Treetagger</h1>
+				<br/>
+				<p><b>Entrée :</b> 3210-etiquete.xml, UTF-8</p>
+				<p><b>Sortie :</b>
+					<ul class="disc">
+						<li>3210-treetagger-detnom.txt, UTF-8</li>
+						<li>3210-treetagger-detnom-freq.txt, UTF-8</li>
+						<li>3210-treetagger-nomnom.txt, UTF-8</li>
+						<li>3210-treetagger-nomnom-freq.txt, UTF-8</li>
+					</ul>
+				</p>
+				<p class="text-justify wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">
+					<div class="cen">
+						<img src="./images/site/bao3-treetagger.png" alt="Représentation BaO3 - Treetagger" style="width:550px; height:300px;" />
+					</div>
+				</p>
+				<br/><br/>
+				<p><b>Explications : </b></p>
+				<p>Nous avons choisi de faire une recherche sur les entités nommées. La version de Treetagger que nous possédons dispose d'un tag NAM pour les noms propres. Pour les pays, nous avons effectué une recherche avec le patron DET:ART NAM, ce qui nous donne par exemple comme résultat "la Grèce".  À noter que les pays et les régions s'employant avec une préposition ne seront pas reconnus, comme par exemple "la Corée du Nord". Cette limitation se remarque d'ailleurs très bien lorsque l'on veut s'intéresser aux organisations et aux compagnies. Elles ne correspondent à aucun patron morphosyntaxique précis et il est dès lors très difficile de les repérer avec cette méthode. Toutefois, les noms de personnes peuvent être facilement extraits grâce au patron NAM NAM, ce qui nous donne par exemple comme résultat "Donald Trump".</p>
+				<p>Concernant le script, plusieurs versions ont été proposées en classe et nous nous sommes basées sur une solution proposée par Serge Fleury.</p>
+				<p>Ainsi, le script "BAO3-treetagger.pl" prend en paramètre :
+					<ol>
+						<li>le fichier taggé avec Treetagger <i>(dans le script, "$ARGV[0]")</i></li>
+					</ol>
+				</p>
+				<p>Commande:
+					<pre><em>perl BAO3-treetagger.pl 3210-etiquete.xml</em></pre>
+				</p>
+				<p>Nous avons tout d'abord encodé les listes en ISO-8859-1 puis nous les avons converties en UTF-8 à l'aide de la commande iconv. Il importe de bien respecter cet encodage et de ne pas utiliser à la place de l'ISO-8859-15 sous peine d'avoir par la suite des problèmes de conversion avec iconv.</p>
+				<p>Une fois les différentes listes obtenues, nous avons calculé la fréquence de chaque syntagme trouvé à l'aide de la commande :
+					<pre><em>cut -f1 3210-treetagger-detnom.txt | sort | uniq -c | sort -rg > 3210-treetagger-detnom-freq.txt</em></pre>
+				</p>
+				<p>Les fichiers de sortie se répartissent comme suit : 
+					<ul class="disc">
+						<li>une <a href="./resultats/bao3/3210-treetagger-detnom.txt" target="_blank">liste</a> des syntagmes qui correspondent au patron morphosyntaxique DET:ART NAM (principalement des noms de pays) et leur <a href="./resultats/bao3/3210-treetagger-detnom-freq.txt" target="_blank">fréquence</a></li>
+						<li>une <a href="./resultats/bao3/3210-treetagger-nomnom.txt" target="_blank">liste</a> des syntagmes qui correspondent au patron morphosyntaxique NAM NAM (principalement des noms de personnes) et leur <a href="./resultats/bao3/3210-treetagger-nomnom-freq.txt" target="_blank">fréquence</a></li>
+					</ul>
+				</p>
+				<br/>
+			</div>
+        </div>
+    </section>
+
+	<section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">Script Treetagger - BaO 3</h1>
+                            <p>Veuillez cliquer ici pour afficher les codes...</p>
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="tour-button">
+                                <a href="./codes/BAO3-treetagger.txt" target="_blank" class="btn btn-common">Code Treetagger &lt;/&gt;</a>
+                             </div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#action-->
+	
+	<section id="company-information">
+        <div class="container">
+            <div class="row">
+				<h1 class="cen">La recherche des patrons dans les fichiers étiquetés avec Cordial</h1>
+				<br/>
+				<p><b>Entrée :</b> 3210.cnr, ISO-8859-15</p>
+				<p><b>Sortie :</b>
+					<ul class="disc">
+						<li>3210-cordial-detnom.txt, UTF-8</li>
+						<li>3210-cordial-detnom-freq.txt, UTF-8</li>
+						<li>3210-cordial-nomnom.txt, UTF-8</li>
+						<li>3210-cordial-nomnom-freq.txt, UTF-8</li>
+					</ul>
+				</p>
+				<p class="text-justify wow fadeInDown" data-wow-duration="400ms" data-wow-delay="400ms">
+					<div class="cen">
+						<img src="./images/site/bao3-cordial.png" alt="Représentation BaO3 - Cordial" style="width:550px; height:300px;" />
+					</div>
+				</p>
+				<br/><br/>
+				<p><b>Explications : </b></p>
+                <p>Comme mentionné plus haut, notre but est d'extraire les entités nommées de notre corpus. À la différence de Treetagger qui possède des tags généraux, les tags de Cordial sont beaucoup plus précis. Ils nous renseignent notamment sur le genre et le nombre des noms et des déterminants. Ce type d'information peut se révéler très utile dans un autre contexte, mais dans notre situation cela a compliqué la recherche. Ainsi, si avec Treetagger on pouvait se contenter du tag DET:ART NAM, ici il nous aurait fallu rechercher les tags DETDFS NPFS- DETDFP NPFP -DETDMS NPMS -DETDMP NPMP pour avoir un résultat similaire. Nous avons choisi de nous concentrer uniquement sur les syntagmes au singulier, ceux au pluriel étant en nombre nettement inférieur.</p>
+				<p>Concernant le script, plusieurs versions ont été proposées en classe et nous nous sommes basées sur une solution proposée par Axel Court, un ancien étudiant du Master Tal. L'avantage de cette solution est que tous les patrons sont stockés dans un seul <a href="./codes/motif.txt" target="_blank">fichier</a> et qu'il n'est pas nécessaire de relancer le script à chaque changement de patron. Néanmoins, nous avons exécuté plusieurs fois le script pour bien distinguer les différents patrons utilisés.</p>
+				<p>
+				Ainsi, le script "BAO3-cordial.pl" prend en paramètre :
+					<ol>
+						<li>le fichier étiqueté avec Cordial <i>(dans le script, "$ARGV[0]")</i></li>
+						<li>le fichier contenant les patrons <i>(dans le script "$ARGV[1]")</i></li>
+					</ol>
+				</p>
+				<p>Commande:
+					<pre><em>perl BAO3-cordial.pl 3210.cnr motif.txt </em></pre>
+				</p>
+				<p>Comme précisé dans l'article sur les encodages, il nous faut d'abord passer par un fichier de sortie encodé en ISO-8859-15, puis le convertir et enregistrer la conversion dans un autre fichier. Chaque lancement de script provoque donc un fichier en ISO-859-15, que nous n'exploitons pas, et un fichier en UTF-8.</p>
+				<p>
+				Nous avons procédé comme ceci :
+					<ol>
+						<li>lancement du script pour chaque patron</li>
+						<li>calcul de la fréquence des syntagmes trouvés</li>
+						<li>concaténation des fichiers pour avoir la même structure que les listes obtenues avec Treetagger</li>
+					</ol>
+				</p>
+				<p>
+				Exemple :
+					<ul class="disc">
+						<li>recherche du patron DETDFS NPFS, résultat det-npfs.txt</li>
+						<li>calcul de la fréquence  : <pre><em>cut -f1 det-npfs.txt | sort | uniq -c | sort -rg > det-npfs-freq.txt</em></pre></li>
+						<li>recherche du patron DETDNS NPMS, résultat det-npms.txt</li>
+						<li>calcul de la fréquence : <pre><em>cut -f1 det-npms.txt | sort | uniq -c | sort -rg > det-npms-freq.txt</em></pre></li>
+						<li>concaténation pour les listes : <pre><em>paste det-npfs.txt det-npms.txt > 3210-cordial-detnom.txt</em></pre></li>
+						<li>concaténation pour les fréquences :<pre><em>paste det-npfs-freq.txt det-npms-freq.txt > 3210-cordial-detnom-freq.txt</em></pre></li>
+					</ul>
+				</p>
+				<p>Les fichiers de sortie se répartissent donc comme suit : 
+					<ul class="disc">
+						<li>une <a href="./resultats/bao3/3210-cordial-detnom.txt" target="_blank">liste</a> des syntagmes qui correspondent aux patrons morphosyntaxiques DETDFS NPFS-DETDMS NPMS (principalement des noms de pays) et leur <a href="./resultats/bao3/3210-cordial-detnom-freq.txt" target="_blank">fréquence</a></li>
+						<li>une <a href="./resultats/bao3/3210-cordial-nomnom.txt" target="_blank">liste</a> des syntagmes qui correspondent aux patrons morphosyntaxiques NPFS NPI-NPMS NPI (principalement des noms de personnes) et leur <a href="./resultats/bao3/3210-cordial-nomnom-freq.txt" target="_blank">fréquence</a></li>
+					</ul>
+				</p>
+				<br/>
+            </div>
+        </div>
+    </section>
+
+    <section id="action" class="responsive">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action take-tour">
+                        <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <h1 class="title">Script Cordial - BaO 3</h1>
+                            <p>Veuillez cliquer ici pour afficher les codes...</p>
+                        </div>
+                        <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                            <div class="tour-button">
+                                <a href="./codes/BAO3-cordial.txt" target="_blank" class="btn btn-common">Code Cordial &lt;/&gt;</a>
+                             </div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--/#action-->
+	
+	<div class="left">
+	<br/><br/>
+        <a href="./bao3.xhtml" class="btn btn-common">Haut de page</a>
+    </div>	
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&#169; M1 TAL 2016/2017. Sotiria BAMPATZANI &amp; Morgane DEHARENG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</footer>
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>

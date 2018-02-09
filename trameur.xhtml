@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//FR" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projet pour le cours Projet encadré 2 - Boîte à Outils" />
+    <meta name="author" content="Sotiria BAMPATZANI &amp; Morgane DEHARENG" />
+	
+    <title>BaO | Projet</title>
+	
+	<link rel="icon" type="image/png" href="./images/ico/favicon.png" sizes="16x16" />
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+	<link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header id="header">   
+        <div class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+					<a class="navbar-brand" href="index.xhtml">
+						<h1><img src="images/logo.png" alt="logo" /></h1>
+					</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a href="index.xhtml">Home</a></li>
+						<li class="dropdown"><a href="presentation.xhtml">Présentation</a></li>
+						<li class="dropdown"><a href="#">Boîtes à Outils<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="bao1.xhtml">BaO 1<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao2.xhtml">BaO 2<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao3.xhtml">BaO 3<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="bao4.xhtml">BaO 4<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="active"><a href="#">Entités Nommées<i class="fa fa-angle-down"></i></a>
+							<ul role="menu" class="sub-menu">
+								<li class="dropdown"><a href="entites-nommees.xhtml">Présentation<i class="fa fa-angle-down"></i></a></li>
+								<li class="dropdown"><a href="sem.xhtml">SEM<i class="fa fa-angle-down"></i></a></li>
+								<li class="active"><a href="trameur.xhtml">Le Trameur<i class="fa fa-angle-down"></i></a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="http://baoprojet.wordpress.com" target="_blank">Blog<i class="fa fa-angle-down"></i></a></li>
+					</ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/#header-->
+
+
+    <section id="page-breadcrumb">
+        <div class="vertical-center sun">
+             <div class="container">
+                <div class="row">
+                    <div class="action">
+                        <div class="col-sm-12">
+                            <h1 class="title">Le Trameur</h1>
+                            <p>Le métier textométrique</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#page-breadcrumb-->
+
+    <section id="company-information">
+        <div class="container">
+            <div class="row">
+			<br/>
+                <p>Comme nous avons expliqué précédemment, la BaO 4 utilise une méthode qui n'est pas appropriée à la nature de nos fichiers. Rappelons aussi que nous voulions établir des relations entre les patrons extraits, qui correspondent dans notre cas aux entités nommées.</p>
+				<p>Pour ce faire, nous avons utilisé Le Trameur, qui permet d'annoter un texte et de générer un graphe à partir de l'annotation réalisée. Il existe plusieurs façons de procéder, que nous détaillons <a href="https://baoprojet.wordpress.com/2017/05/29/comment-annoter-et-faire-des-graphes-avec-le-trameur/" target="_blank">ici</a>. Pour notre part, nous avons choisi la quatrième option.</p>
+				<p>Le fichier que Le Trameur prend en entrée est un <a href="./resultats/trameur/3210.txt" target="_blank">fichier TXT</a>, le résultat de la BaO 1.</p>
+				<p>En sortie :<br/>
+					<ul class="disc">
+						<li>un <a href="./resultats/trameur/3210-2-treetagger.txt" target="_blank">fichier TXT</a>, qui contient le corpus sous forme d'une liste</li>
+						<li>un <a href="./resultats/trameur/resuTrTg.txt" target="_blank">fichier TXT</a>, étiqueté avec Le Trameur</li>
+						<li>un <a href="./resultats/trameur/graph/grapheannotation-3210-29_4_2017_15_23_52.xml" target="_blank">fichier XML</a>  exporté, qui est le graphe d'annotation généré</li>
+					</ul>
+				</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="related-work" class="padding-top padding-bottom">
+        <div class="container">
+            <div class="row">
+                <h1 class="title text-center">Les résultats de chaque BaO, et du Trameur</h1>
+                <div class="col-sm-3">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-single">
+                            <div class="portfolio-thumb">
+                                <img src="images/portfolio/rsz_bao2.png" class="img-responsive" alt="BaO 2 - Etiquetage morphosyntaxique" />
+                            </div>
+                            <div class="portfolio-view">
+                                <ul class="nav nav-pills">
+                                    <li><a href="images/portfolio/bao2.png" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-info ">
+                            <h2>BaO 2 - Etiquetage <br/>morphosyntaxique</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-single">
+                            <div class="portfolio-thumb">
+                                <img src="images/portfolio/rsz_bao3cordial.png" class="img-responsive" alt="BaO 3 - Extraction des patrons (Cordial)" />
+                            </div>
+                            <div class="portfolio-view">
+                                <ul class="nav nav-pills">
+                                    <li><a href="images/portfolio/bao3cordial.PNG" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-info ">
+                            <h2>BaO 3 - Extraction des <br/>patrons (Cordial)</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-single">
+                            <div class="portfolio-thumb">
+                                <img src="images/portfolio/rsz_bao3treetagger.png" class="img-responsive" alt="BaO 3 - Extraction des patrons (TreeTagger)" />
+                            </div>
+                            <div class="portfolio-view">
+                                <ul class="nav nav-pills">
+                                    <li><a href="images/portfolio/bao3treetagger.PNG" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-info ">
+                            <h2>BaO 3 - Extraction des <br/>patrons (TreeTagger)</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="portfolio-wrapper">
+                        <div class="portfolio-single">
+                            <div class="portfolio-thumb">
+                                <img src="images/portfolio/rsz_trameur.png" class="img-responsive" alt="Annotat+Graphe - Le Trameur" />
+                            </div>
+                            <div class="portfolio-view">
+                                <ul class="nav nav-pills">
+                                    <li><a href="images/portfolio/trameur.png" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="portfolio-info ">
+                            <h2>Graphe d'annotation<br/>- Le Trameur</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#related-work-->
+	
+	<div class="left">
+        <a href="./trameur.xhtml" class="btn btn-common">Haut de page</a>
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&#169; M1 TAL 2016/2017. Sotiria BAMPATZANI &amp; Morgane DEHARENG</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>   
+</body>
+</html>
